@@ -24,10 +24,11 @@ cv:
         area: Electrical and Computer Engineering
         studyType: Ph.D.
         start_date: 2022
-        end_date: 2027
+        end_date: 2028
         highlights:
-          - "Advisor: [William Gilpin](https://www.wgilpin.com/) (Physics)"
+          - "Advisors: [William Gilpin](https://www.wgilpin.com/) (Physics) and [Sanjay Shakkottai](https://sites.google.com/view/sanjay-shakkottai) (ECE)"
           - "Research: Generative Models, Nonlinear Dynamical Systems, Information and Computation"
+          - "Expected graduation: Spring 2028"
 
       - institution: California Institute of Technology
         location: Pasadena, CA
@@ -45,8 +46,8 @@ cv:
         start_date: 2022-09
         end_date: present
         highlights:
-          - "Past: pretrained transformer for chaotic dynamics; interpretability of foundation models for science; mathematical properties of diffusion-generated data."
-          - "Current: high-dimensional dynamics; SciML architectures; diffusion models: theory & science applications."
+          - "Past research: see [Selected Works](#selected-works)."
+          - "Current research: high-dimensional dynamics, SciML architectures, recurrent-depth paradigms, and flow models."
 
       - company: Computational Imaging Lab, Caltech
         position: Research
@@ -93,31 +94,13 @@ cv:
           - Semi-analytic model for black hole formation, informed by the hydrogen 21-cm signal.
           - Vision pipeline for an underground robot rover, 2020 DARPA Subterranean Challenge.
 
-    Publications:
-      - title: Fractal basins trap latent reasoning
-        publisher: "J. Lai*, A. Bao*, J. Quinn, W. Gilpin. In submission"
-        releaseDate: 2026-09-04
-        url: https://arxiv.org/abs/2609.04963
-
-      - title: Universal Redundancies in Time Series Foundation Models
-        publisher: "A. Bao*, V. H. Vattikuti*, J. Lai, W. Gilpin. ICML 2026 (Spotlight, top 2.2% of 23,918 submissions)"
-        releaseDate: 2026
-        url: https://arxiv.org/abs/2602.01605
-
-      - title: Transformers for dynamical systems learn transfer operators in-context
-        publisher: "A. Bao*, J. Lai*, W. Gilpin*. In submission"
-        releaseDate: 2026-02-21
-        url: https://arxiv.org/abs/2602.18679
-
-      - title: "Panda: A pretrained forecast model for chaotic dynamics"
-        publisher: "J. Lai*, A. Bao*, W. Gilpin. ICLR 2026 (27% acceptance rate, 19,525 submissions)"
-        releaseDate: 2026
-        url: https://arxiv.org/abs/2505.13755
-
-      - title: Gaussian Universality for Diffusion Models
-        publisher: "R. Ghane*, A. Bao*, D. Akhtiamov*, B. Hassibi. IEEE Signal Processing Letters"
-        releaseDate: 2025
-        url: https://doi.org/10.1109/LSP.2025.3637667
+    Selected Works:
+      - bullet: '\* denotes a co-first author.'
+      - bullet: 'Jeffrey Lai\*, Anthony Bao\*, John Quinn, William Gilpin. [Fractal basins trap latent reasoning](https://arxiv.org/abs/2609.04963). In submission, 2026.'
+      - bullet: 'Anthony Bao\*, Venkata Hasith Vattikuti\*, Jeffrey Lai, William Gilpin. [Universal Redundancies in Time Series Foundation Models](https://arxiv.org/abs/2602.01605). ICML 2026. Spotlight (top 2.2% of 23,918 submissions).'
+      - bullet: 'Anthony Bao\*, Jeffrey Lai\*, William Gilpin\*. [Transformers for dynamical systems learn transfer operators in-context](https://arxiv.org/abs/2602.18679). In submission, 2026.'
+      - bullet: 'Jeffrey Lai\*, Anthony Bao\*, William Gilpin. [Panda: A pretrained forecast model for chaotic dynamics](https://arxiv.org/abs/2505.13755). ICLR 2026 (27% acceptance rate, 19,525 submissions).'
+      - bullet: 'Reza Ghane\*, Anthony Bao\*, Danil Akhtiamov\*, Babak Hassibi. [Gaussian Universality for Diffusion Models](https://doi.org/10.1109/LSP.2025.3637667). IEEE Signal Processing Letters, 2025.'
 
     Open Source Projects:
       - name: dysts — Top Contributor & Maintainer
@@ -125,6 +108,14 @@ cv:
         start_date: 2024
         end_date: present
         summary: Numerical integration of chaotic systems of ordinary differential equations (ODEs).
+
+      - name: loopscape — Co-Creator & Maintainer
+        url: https://github.com/gilpinlab/loopscape
+        start_date: 2026
+        end_date: present
+        summary: "Code for Fractal basins trap latent reasoning (2026 preprint)."
+        highlights:
+          - Developed in a private repository. The public release omits the private commit history.
 
       - name: panda — Co-Creator & Maintainer
         url: https://github.com/abao1999/panda
@@ -163,3 +154,6 @@ cv:
         date: 2020
       - title: Saul & Joan Cogen Memorial Fellowship
         date: 2019
+
+    Work Authorization:
+      - bullet: U.S. Citizen

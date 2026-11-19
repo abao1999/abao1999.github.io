@@ -1,0 +1,17 @@
+# Trips shown on the travel page (/travel/), newest first within each year.
+# Each entry needs `place` and `year`; everything else is optional.
+#   lat / lon  -> adds a marker to the map (decimal degrees; look them up on https://www.latlong.net)
+#   photo      -> file name of an image in assets/img/photos/
+#   link       -> e.g. a blog post or photo album
+#
+# Example:
+# - place: Kyoto, Japan
+#   year: 2025
+#   when: March
+#   lat: 35.0116
+#   lon: 135.7681
+#   note: Temples, tea, and a workshop talk.
+#   photo: kyoto.jpg
+#   link: /blog/2025/kyoto/
+
+places: []

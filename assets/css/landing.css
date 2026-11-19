@@ -1,0 +1,45 @@
+/* Loaded only by the landing page. */
+body {
+  isolation: isolate;
+}
+
+body::before {
+  --basin-image: url("../img/fractal-basin.webp");
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(rgb(242 247 249 / 12%), rgb(242 247 249 / 12%)),
+    var(--basin-image) center 46% / cover no-repeat,
+    #26294d;
+}
+
+.container[role="main"] {
+  box-sizing: border-box;
+  width: calc(100% - 2 * clamp(0.75rem, 3vw, 3rem));
+  padding: 0;
+}
+
+.about-panel {
+  display: flow-root;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  background: rgb(255 255 255 / 97%);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 40px rgb(11 44 59 / 16%);
+}
+
+.about-panel + .about-panel {
+  margin-top: clamp(3rem, 11vh, 7rem);
+}
+
+.contact-icons a[href^="mailto:"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body::before {
+    --basin-image: url("../img/fractal-basin-mobile.webp");
+    background-position: center, 58% center;
+  }
+}

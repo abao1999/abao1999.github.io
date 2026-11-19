@@ -1,0 +1,12 @@
+github_users:
+  - abao1999
+
+repo_description_lines_max: 2
+
+github_repos:
+  - abao1999/panda
+  - abao1999/tsfm-lens
+  - gilpinlab/loopscape
+  - GilpinLab/dysts
+  - abao1999/diffusion-gmm
+  - williamgilpin/cphy

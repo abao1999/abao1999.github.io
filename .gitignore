@@ -1,0 +1,40 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+# Keep only assets used by the website. Reopen directories for the exceptions below.
+/assets/**
+!/assets/**/
+!/assets/css/landing.css
+!/assets/img/prof_pic.jpg
+!/assets/img/fractal-basin.webp
+!/assets/img/fractal-basin-mobile.webp
+!/assets/pdf/cv_abao.pdf
+!/assets/memorization/attractors_main_panel.pdf
+!/assets/memorization/attractors_main_panel.webp
+!/assets/fractal_basins/eqr_sudoku_s8_rating109_2be8010550ebf945/zoom-poster.webp
+!/assets/fractal_basins/eqr_sudoku_s8_rating109_2be8010550ebf945/zseq_eqr_sudoku_s8_rating109_2be8010550ebf945_zoom_video_speed1p5_framed.mp4
+
+# The photos page automatically displays these image formats.
+!/assets/img/photos/**/*.jpg
+!/assets/img/photos/**/*.jpeg
+!/assets/img/photos/**/*.png
+!/assets/img/photos/**/*.JPG
+!/assets/img/photos/**/*.JPEG
+!/assets/img/photos/**/*.PNG
+
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc

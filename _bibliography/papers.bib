@@ -1,0 +1,103 @@
+---
+---
+
+@article{lai2026testtime,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {Test-Time Forecasting: Recurrent Depth Enables In-Context Dynamics Prediction},
+  author      = {Lai, Jeffrey B. and Quinn, John and Bao, Anthony and Gilpin, William},
+  journal     = {arXiv preprint arXiv:2610.19552},
+  year        = {2026},
+  month       = {oct},
+  arxiv       = {2610.19552},
+  abstract    = {Foundation models for dynamical systems can forecast unseen partial differential equations (PDEs), ordinary differential equations (ODEs), and time series during inference. However, it remains an open question whether these foundation models truly learn generalizable in-context forecasting strategies. We show that looped transformers are capable of emulating propagators for dynamical systems in-context by first establishing a link between linear attention and (extended) dynamic mode decomposition. We then generalize this insight into the Test-Time Forecasting (TTF) framework in which a one-step forecaster leverages iterations of gradient descent as recurrent depth. We demonstrate that lightweight TTF models trained on ODEs and PDEs generalize to out-of-distribution system dynamics during autoregressive rollout after being trained for one-step prediction. Our results reinforce TTF as a theoretically motivated framework for designing recurrent depth models capable of forecasting unseen dynamical systems at test-time.}
+}
+
+@article{lai2026fractal,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Fractal basins trap latent reasoning},
+  author      = {Lai*, Jeffrey and Bao*, Anthony and Quinn, John and Gilpin, William},
+  journal     = {arXiv preprint arXiv:2609.04963},
+  note        = {In submission},
+  year        = {2026},
+  month       = {sep},
+  arxiv       = {2609.04963},
+  annotation  = {* Equal contribution},
+  abstract    = {Reasoning allows artificial intelligence models to revisit and correct their mistakes, enabling recent frontier advances in mathematical theorem solving, software engineering, and autonomous task planning. Reasoning models are widely observed to reason for longer on harder tasks, but the general mechanism responsible for these slowdowns is unknown. Here, we show that reasoning models exhibit transient chaos, a physical consequence of the computational complexity of difficult tasks. As a consequence, we show that diverse leading reasoning models are dynamical systems with fractal basins, with fractality increasing with task difficulty across diverse tasks like Sudoku and maze solving, visual puzzles, and mathematical logic. We show that transient chaos emerges due to reasoning becoming trapped for extended durations near saddle points, which we show correspond to nearly-correct attempted solutions of the underlying problem. Our results show that reasoning slowdowns are an inevitable consequence of problem hardness in modern artificial intelligence models, and establish reasoning traces as a rich new class of dynamical system.}
+}
+
+@article{bao2026transfer,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Transformers for dynamical systems learn transfer operators in-context},
+  author      = {Bao*, Anthony and Lai*, Jeffrey and Gilpin*, William},
+  journal     = {arXiv preprint arXiv:2602.18679},
+  note        = {In submission},
+  year        = {2026},
+  month       = {feb},
+  arxiv       = {2602.18679},
+  annotation  = {* Equal contribution},
+  abstract    = {Large-scale foundation models for scientific machine learning adapt to physical settings unseen during training, such as zero-shot transfer between turbulent scales. This phenomenon, in-context learning, challenges conventional understanding of learning and adaptation in physical systems. Here, we study in-context learning of dynamical systems in a minimal setting: we train a small two-layer, single-head transformer to forecast one dynamical system, and then evaluate its ability to forecast a different dynamical system without retraining. We discover an early tradeoff in training between in-distribution and out-of-distribution performance, which manifests as a secondary double descent phenomenon. We discover that attention-based models apply a transfer-operator forecasting strategy in-context. They (1) lift low-dimensional time series using delay embedding, to detect the system's higher-dimensional dynamical manifold, and (2) identify and forecast long-lived invariant sets that characterize the global flow on this manifold. Our results clarify the mechanism enabling large pretrained models to forecast unseen physical systems at test time without retraining, and they illustrate the unique ability of attention-based models to leverage global attractor information in service of short-term forecasts.}
+}
+
+@inproceedings{bao2026redundancies,
+  abbr        = {ICML},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Universal Redundancies in Time Series Foundation Models},
+  author      = {Bao*, Anthony and Vattikuti*, Venkata Hasith and Lai, Jeffrey and Gilpin, William},
+  booktitle   = {Forty-Third International Conference on Machine Learning (ICML)},
+  year        = {2026},
+  arxiv       = {2602.01605},
+  code        = {https://github.com/abao1999/tsfm-lens},
+  annotation  = {* Equal contribution},
+  award_name  = {Spotlight},
+  award       = {**Spotlight** at ICML 2026 (top 2.2% of 23,918 submissions).},
+  abstract    = {Time Series Foundation Models (TSFMs) leverage extensive pretraining to accurately predict unseen time series during inference, without the need for task-specific fine-tuning. Through large-scale evaluations on standard benchmarks, we find that leading transformer-based TSFMs exhibit redundant components in their intermediate layers. We introduce a set of tools for mechanistic interpretability of TSFMs, including ablations of specific components and direct logit attribution on the residual stream. Our findings are consistent across several leading TSFMs with diverse architectures, and across a diverse set of real-world and synthetic time-series datasets. We discover that all models in our study are robust to ablations of entire layers. Furthermore, we develop a theoretical framework framing transformers as kernel regressors, motivating a purely intrinsic strategy for ablating heads based on the stable rank of the per-head projection matrices. Using this approach, we uncover the specific heads responsible for degenerate phenomena widely observed in TSFMs, such as parroting of motifs from the context and seasonality bias. Our study sheds light on the universal properties of this emerging class of architectures for continuous-time sequence modeling.}
+}
+
+@inproceedings{lai2026panda,
+  abbr        = {ICLR},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Panda: A pretrained forecast model for chaotic dynamics},
+  author      = {Lai*, Jeffrey and Bao*, Anthony and Gilpin, William},
+  booktitle   = {The Fourteenth International Conference on Learning Representations (ICLR)},
+  year        = {2026},
+  arxiv       = {2505.13755},
+  code        = {https://github.com/abao1999/panda},
+  website     = {https://huggingface.co/GilpinLab},
+  annotation  = {* Equal contribution},
+  abstract    = {Chaotic systems are intrinsically sensitive to small errors, challenging efforts to construct predictive data-driven models of real-world dynamical systems such as fluid flows or neuronal activity. Prior efforts comprise either specialized models trained on individual time series, or foundation models trained on vast time series databases with little underlying dynamical structure. Motivated by dynamical systems theory, we present Panda, Patched Attention for Nonlinear DynAmics. We train Panda on a novel synthetic, extensible dataset of 2 x 10^4 chaotic dynamical systems that we discover using an evolutionary algorithm. Trained purely on simulated data, Panda exhibits emergent properties: zero-shot forecasting of unseen chaotic systems preserving both short-term accuracy and distributional measures, nonlinear resonance patterns in attention heads, and effective prediction of real-world experimental time series. Despite having been trained only on low-dimensional ordinary differential equations, Panda spontaneously develops the ability to predict partial differential equations without retraining. We also demonstrate a neural scaling law for differential equations, underscoring the potential of pre-trained models for probing abstract mathematical domains like nonlinear dynamics.}
+}
+
+@article{ghane2025gaussian,
+  abbr        = {IEEE SPL},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Gaussian Universality for Diffusion Models},
+  author      = {Ghane*, Reza and Bao*, Anthony and Akhtiamov*, Danil and Hassibi, Babak},
+  journal     = {IEEE Signal Processing Letters},
+  volume      = {33},
+  pages       = {116--120},
+  year        = {2025},
+  doi         = {10.1109/LSP.2025.3637667},
+  arxiv       = {2501.07741},
+  annotation  = {* Equal contribution},
+  abstract    = {We investigate Gaussian Universality for data distributions generated via diffusion models. By Gaussian Universality we mean that the test error of a generalized linear model f(W) trained for a classification task on the diffusion data matches the test error of f(W) trained on the Gaussian Mixture with matching means and covariances per class. In other words, the test error depends only on the first and second order statistics of the diffusion-generated data in the linear setting. As a corollary, the analysis of the test error for linear classifiers can be reduced to Gaussian data from diffusion-generated data. Analysing the performance of models trained on synthetic data is a pertinent problem due to the surge of methods such as Sehwag et al. (2024). Moreover, we show that, for any 1-Lipschitz scalar function phi, phi(x) is close to E phi(x) with high probability for x sampled from the conditional diffusion model corresponding to each class. Finally, we note that current approaches for proving universality do not apply to diffusion-generated data as the covariance matrices of the data tend to have vanishing minimum singular values, contrary to the assumption made in the literature. This leaves extending previous mathematical universality results as an intriguing open question.}
+}
+
+% TODO (Anthony): Google Scholar truncates this author list after the first five authors.
+% Replace "and others" with the full list (including your position) from the paper.
+@article{chuck2025mused,
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  title       = {MuSED-FM: A Benchmark for Evaluating Multivariate Time Series Foundation Models},
+  author      = {Chuck, C. and Narasimhan, S. S. and Agarwal, S. and Narayanan, A. and Gupta, A. and others},
+  journal     = {OpenReview preprint},
+  year        = {2025},
+  html        = {https://openreview.net/forum?id=qmtcxAPQu8}
+}

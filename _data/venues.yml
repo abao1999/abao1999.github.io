@@ -1,0 +1,18 @@
+"ICLR":
+  url: https://iclr.cc/
+  color: "#b5310b"
+
+"ICML":
+  url: https://icml.cc/
+  color: "#1f4e8c"
+
+"IEEE SPL":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters
+  color: "#00629b"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#9e9e9e"
+
+"Preprint":
+  color: "#6c757d"

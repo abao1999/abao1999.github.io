@@ -1,0 +1,5 @@
+# Optional captions for the photos page (/photos/).
+# Keys are file names in assets/img/photos/; photos without an entry are shown without a caption.
+#
+# Example:
+# volcano.jpg: Arenal, Costa Rica (2024)

@@ -1,0 +1,10 @@
+# Co-author homepages: author names in _bibliography/papers.bib that match an entry here get linked.
+# Keys are lowercase last names; `firstname` lists the first-name spellings used in the .bib file.
+
+"gilpin":
+  - firstname: ["William", "W."]
+    url: https://www.wgilpin.com/
+
+"hassibi":
+  - firstname: ["Babak", "B."]
+    url: https://www.eas.caltech.edu/people/hassibi

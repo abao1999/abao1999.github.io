@@ -33,10 +33,6 @@ body::before {
   margin-top: clamp(3rem, 11vh, 7rem);
 }
 
-.contact-icons a[href^="mailto:"] {
-  display: none;
-}
-
 @media (max-width: 600px) {
   body::before {
     --basin-image: url("../img/fractal-basin-mobile.webp");
